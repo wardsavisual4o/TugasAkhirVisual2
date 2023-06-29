@@ -27,8 +27,6 @@ type
     ds1: TDataSource;
     con1: TZConnection;
     zqry1: TZQuery;
-    frxdbdtst1: TfrxDBDataset;
-    frxrprt1: TfrxReport;
     zqry2: TZQuery;
     zqry3: TZQuery;
     l5: TLabel;
@@ -44,7 +42,6 @@ type
     procedure b5Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure dg1CellClick(Column: TColumn);
-    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -216,11 +213,6 @@ c2.Text:= zqry1.FieldList[2].AsString;
 Edit1.Text:= zqry1.FieldList[3].AsString;
 Edit2.Text:= zqry1.FieldList[4].AsString;
 Edit3.Text:= zqry1.FieldList[5].AsString;
-end;
-
-procedure TForm7.b6Click(Sender: TObject);
-begin
-frxrprt1.showreport();
 end;
 
 end.

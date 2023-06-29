@@ -43,6 +43,8 @@ type
     l7: TLabel;
     c5: TComboBox;
     dtp1: TDateTimePicker;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
     procedure FormCreate(Sender: TObject);
     procedure editbersih;
     procedure editenable;
@@ -54,6 +56,7 @@ type
     procedure b5Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure dg1CellClick(Column: TColumn);
+    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -255,6 +258,11 @@ dtp1.Date:=Form8.zqry1.Fields[6].AsDateTime;
 Edit1.Text:= zqry1.FieldList[7].AsString;
 Edit2.Text:= zqry1.FieldList[8].AsString;
 Edit3.Text:= zqry1.FieldList[9].AsString;
+end;
+
+procedure TForm8.b6Click(Sender: TObject);
+begin
+frxReport1.ShowReport();
 end;
 
 end.

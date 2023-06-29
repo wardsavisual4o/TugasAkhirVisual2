@@ -30,8 +30,6 @@ type
     ds1: TDataSource;
     con1: TZConnection;
     zqry1: TZQuery;
-    frxdbdtst1: TfrxDBDataset;
-    frxrprt1: TfrxReport;
     zqry2: TZQuery;
     zqry3: TZQuery;
     l6: TLabel;
@@ -56,7 +54,6 @@ type
     procedure b5Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure dg1CellClick(Column: TColumn);
-    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -258,11 +255,6 @@ dtp1.Date:=Form8.zqry1.Fields[6].AsDateTime;
 Edit1.Text:= zqry1.FieldList[7].AsString;
 Edit2.Text:= zqry1.FieldList[8].AsString;
 Edit3.Text:= zqry1.FieldList[9].AsString;
-end;
-
-procedure TForm8.b6Click(Sender: TObject);
-begin
-frxrprt1.showreport();
 end;
 
 end.

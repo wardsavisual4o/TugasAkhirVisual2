@@ -35,6 +35,8 @@ type
     l8: TLabel;
     Edit7: TEdit;
     c1: TComboBox;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
     procedure editbersih;
     procedure editenable;
     procedure posisiawal;
@@ -221,7 +223,7 @@ end;
 
 procedure TForm2.b6Click(Sender: TObject);
 begin
-
+frxReport1.ShowReport();
 ;end;
 
 end.

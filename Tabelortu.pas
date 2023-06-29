@@ -37,6 +37,8 @@ type
     Edit7: TEdit;
     l9: TLabel;
     Edit8: TEdit;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
     procedure editbersih;
     procedure editenable;
     procedure posisiawal;
@@ -47,6 +49,7 @@ type
     procedure b5Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure dg1CellClick(Column: TColumn);
+    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -222,6 +225,11 @@ Edit6.Text:= zqry1.FieldList[6].AsString;
 c1.Text:= zqry1.FieldList[7].AsString;
 Edit7.Text:= zqry1.FieldList[8].AsString;
 Edit8.Text:= zqry1.FieldList[9].AsString;
+end;
+
+procedure TForm3.b6Click(Sender: TObject);
+begin
+frxReport1.ShowReport();
 end;
 
 end.
