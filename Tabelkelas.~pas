@@ -25,8 +25,8 @@ type
     ds1: TDataSource;
     con1: TZConnection;
     zqry1: TZQuery;
-    frxdbdtst1: TfrxDBDataset;
-    frxrprt1: TfrxReport;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
     procedure editbersih;
     procedure editenable;
     procedure posisiawal;

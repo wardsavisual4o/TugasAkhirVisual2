@@ -3,7 +3,7 @@ object Formkelas: TFormkelas
   Top = 167
   Width = 772
   Height = 493
-  Caption = 'TABEL KELAS'
+  Caption = 'KELAS'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -147,8 +147,8 @@ object Formkelas: TFormkelas
   end
   object ds1: TDataSource
     DataSet = zqry1
-    Left = 504
-    Top = 120
+    Left = 16
+    Top = 352
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -157,12 +157,12 @@ object Formkelas: TFormkelas
     Connected = True
     HostName = 'localhost'
     Port = 3306
-    Database = 'tugas_visual'
+    Database = 'database_siswa'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'D:\Tugas Akhir visual 2\libmysql.dll'
-    Left = 504
-    Top = 24
+    LibraryLocation = 'D:\wardah\TugasAkhirVisual2\libmysql.dll'
+    Left = 16
+    Top = 256
   end
   object zqry1: TZQuery
     Connection = con1
@@ -170,37 +170,29 @@ object Formkelas: TFormkelas
     SQL.Strings = (
       'select * from tabel_kelas')
     Params = <>
-    Left = 504
-    Top = 72
+    Left = 16
+    Top = 304
   end
-  object frxdbdtst1: TfrxDBDataset
-    UserName = 'frxDBDataset1'
-    CloseDataSource = False
-    DataSet = zqry1
-    BCDToCurrency = False
-    Left = 576
-    Top = 24
-  end
-  object frxrprt1: TfrxReport
-    Version = '4.12.6'
+  object frxReport1: TfrxReport
+    Version = '4.0.11'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
     PreviewOptions.Zoom = 1.000000000000000000
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
-    ReportOptions.CreateDate = 45101.545964409700000000
-    ReportOptions.LastChange = 45101.876101226850000000
+    ReportOptions.CreateDate = 45106.696022511600000000
+    ReportOptions.LastChange = 45106.696022511600000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 576
-    Top = 80
+    Left = 16
+    Top = 392
     Datasets = <
       item
-        DataSet = frxdbdtst1
+        DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
       end>
     Variables = <>
@@ -213,23 +205,19 @@ object Formkelas: TFormkelas
       PaperWidth = 210.000000000000000000
       PaperHeight = 297.000000000000000000
       PaperSize = 9
-      LeftMargin = 10.000000000000000000
-      RightMargin = 10.000000000000000000
-      TopMargin = 10.000000000000000000
-      BottomMargin = 10.000000000000000000
       object ReportTitle1: TfrxReportTitle
-        Height = 49.133890000000000000
+        Height = 22.677180000000000000
         Top = 18.897650000000000000
-        Width = 718.110700000000000000
+        Width = 793.701300000000000000
         object Memo1: TfrxMemoView
-          Left = 257.008040000000000000
-          Top = 11.338590000000000000
-          Width = 226.771800000000000000
-          Height = 26.456710000000000000
-          ShowHint = False
+          Left = 222.992270000000000000
+          Top = 3.779530000000000000
+          Width = 215.433210000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -20
+          Font.Height = -13
           Font.Name = 'Arial'
           Font.Style = []
           Memo.UTF8 = (
@@ -238,15 +226,13 @@ object Formkelas: TFormkelas
         end
       end
       object PageHeader1: TfrxPageHeader
-        Height = 34.015770000000000000
-        Top = 90.708720000000000000
-        Width = 718.110700000000000000
+        Height = 18.897650000000000000
+        Top = 64.252010000000000000
+        Width = 793.701300000000000000
         object Memo2: TfrxMemoView
-          Left = 15.118120000000000000
-          Top = 15.118120000000000000
+          Left = 94.488250000000000000
           Width = 30.236240000000000000
           Height = 18.897650000000000000
-          ShowHint = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -13
@@ -259,11 +245,9 @@ object Formkelas: TFormkelas
           ParentFont = False
         end
         object Memo3: TfrxMemoView
-          Left = 45.354360000000000000
-          Top = 15.118120000000000000
+          Left = 124.724490000000000000
           Width = 136.063080000000000000
           Height = 18.897650000000000000
-          ShowHint = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -13
@@ -276,11 +260,9 @@ object Formkelas: TFormkelas
           ParentFont = False
         end
         object Memo4: TfrxMemoView
-          Left = 181.417440000000000000
-          Top = 15.118120000000000000
+          Left = 260.787570000000000000
           Width = 117.165430000000000000
           Height = 18.897650000000000000
-          ShowHint = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -13
@@ -293,11 +275,9 @@ object Formkelas: TFormkelas
           ParentFont = False
         end
         object Memo5: TfrxMemoView
-          Left = 298.582870000000000000
-          Top = 15.118120000000000000
+          Left = 377.953000000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
-          ShowHint = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -13
@@ -312,19 +292,18 @@ object Formkelas: TFormkelas
       end
       object MasterData1: TfrxMasterData
         Height = 18.897650000000000000
-        Top = 185.196970000000000000
-        Width = 718.110700000000000000
-        DataSet = frxdbdtst1
+        Top = 143.622140000000000000
+        Width = 793.701300000000000000
+        DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'
         RowCount = 0
         object Memo6: TfrxMemoView
-          Left = 15.118120000000000000
+          Left = 94.488250000000000000
           Width = 30.236240000000000000
           Height = 18.897650000000000000
-          ShowHint = False
-          DataField = 'id_kelas'
-          DataSet = frxdbdtst1
+          DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
+          DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -13
@@ -333,16 +312,15 @@ object Formkelas: TFormkelas
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset1."id_kelas"]')
+            '[line]')
           ParentFont = False
         end
         object Memo7: TfrxMemoView
-          Left = 45.354360000000000000
+          Left = 124.724490000000000000
           Width = 136.063080000000000000
           Height = 18.897650000000000000
-          ShowHint = False
           DataField = 'nama'
-          DataSet = frxdbdtst1
+          DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -356,12 +334,11 @@ object Formkelas: TFormkelas
           ParentFont = False
         end
         object Memo8: TfrxMemoView
-          Left = 181.417440000000000000
+          Left = 260.787570000000000000
           Width = 117.165430000000000000
           Height = 18.897650000000000000
-          ShowHint = False
           DataField = 'jenis'
-          DataSet = frxdbdtst1
+          DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -375,12 +352,11 @@ object Formkelas: TFormkelas
           ParentFont = False
         end
         object Memo9: TfrxMemoView
-          Left = 298.582870000000000000
+          Left = 377.953000000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
-          ShowHint = False
           DataField = 'jurusan'
-          DataSet = frxdbdtst1
+          DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -395,5 +371,12 @@ object Formkelas: TFormkelas
         end
       end
     end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSet = zqry1
+    Left = 64
+    Top = 432
   end
 end
